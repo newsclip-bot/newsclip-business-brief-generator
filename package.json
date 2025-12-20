@@ -1,0 +1,11 @@
+{
+  "name": "newsclip-business-brief-generator",
+  "version": "0.1.0",
+  "description": "Create a short business briefing markdown from a category URL.",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
