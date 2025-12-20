@@ -27,3 +27,7 @@ npm run start -- https://newsclip.com/business/
 
 ## License
 MIT
+
+## Changelog
+
+- 2025-12-20T21:27:49.455Z: Add small notes file and clarify usage.
