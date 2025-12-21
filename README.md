@@ -25,6 +25,11 @@ npm run start -- https://newsclip.com/business/
 - For production, you can swap the parsing layer with a robust library.
 - Designed to be safe to run in CI or cron contexts.
 
+
+## Documentation
+
+View the [GitHub Pages documentation](https://newsclip-bot.github.io/newsclip-business-brief-generator/) for this utility.
+
 ## License
 MIT
 
