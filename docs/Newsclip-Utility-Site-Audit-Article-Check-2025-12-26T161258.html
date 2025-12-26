@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsclip Utility: Site Audit Article Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+        }
+        
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-row {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .article-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .article-hashtags {
+            color: #667eea;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+        
+        <header>
+            <h1>Newsclip Utility: Site Audit Article Check</h1>
+            <p>Latest Articles Grouped by Category</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated: December 26, 2025 at 04:12 PM</p>
+        </header>
+        
+        <section class="category-section">
+  <h2 class="category-header">General</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/us-strikes-isis-in-nigeria-1.gif" alt="Nigeria Collaborates with U.S. to Strike ISIS Targets: A Critical Analysis" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/nigeria-collaborates-with-us-to-strike-isis-targets-a-critical-analysis" title="Nigeria Collaborates with U.S. to Strike ISIS Targets: A Critical Analysis">Nigeria Collaborates with U.S. to Strike ISIS Targets: A Critical Analysis</a></h3>
+          <p class="article-excerpt">As Nigeria reveals it shared vital intelligence with the U.S. leading to airstrikes against ISIS, the implications for regional security and international relations are profound. Explore the delicate balance of power an…</p>
+          <div class="article-hashtags">#Nigeria #USMilitary #ISIS #ReligiousFreedom #GlobalSecurity</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/us-strikes-isis-in-nigeria.gif" alt="Christmas Night Airstrikes: Trump Targets ISIS in Nigeria" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/christmas-night-airstrikes-trump-targets-isis-in-nigeria" title="Christmas Night Airstrikes: Trump Targets ISIS in Nigeria">Christmas Night Airstrikes: Trump Targets ISIS in Nigeria</a></h3>
+          <p class="article-excerpt">On Christmas night, President Trump ordered airstrikes in Nigeria against ISIS militants accused of targeting Christians. This decisive action raises critical questions about the intersection of faith, global politics,…</p>
+          <div class="article-hashtags">#Nigeria #Trump #ISIS #MilitaryAction #ChristianPersecution</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/claudio-neves-valente-nuno-loureiro-split.jpg" alt="Obsessed with Success: The Tragic Murders at Brown and MIT" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/obsessed-with-success-the-tragic-murders-at-brown-and-mit" title="Obsessed with Success: The Tragic Murders at Brown and MIT">Obsessed with Success: The Tragic Murders at Brown and MIT</a></h3>
+          <p class="article-excerpt">A startling new report reveals that the recent shootings at Brown University and MIT were fueled by a suspect&#039;s tragic fixation on an academic symbol of success. Delve deeper into this unsettling case that intertwines o…</p>
+          <div class="article-hashtags">#GunViolence #MentalHealth #EducationReform #AcademicSuccess #CommunitySafety</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-53968.jpg" alt="Private Equity&#039;s Dangerous Game: Circular Deals and Crumbling Trust" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/private-equitys-dangerous-game-circular-deals-and-crumbling-trust" title="Private Equity&#039;s Dangerous Game: Circular Deals and Crumbling Trust">Private Equity&#039;s Dangerous Game: Circular Deals and Crumbling Trust</a></h3>
+          <p class="article-excerpt">Amid growing concerns, private equity faces scrutiny as investors highlight a troubling trend of circular deals that undermine transparency. This investigation delves into how these practices could reshape the industry…</p>
+          <div class="article-hashtags">#PrivateEquity #InvestmentRisks #Transparency #CorporateAccountability #JournalismMatters</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/santa-pulled-over-in-ohio-001.jpg" alt="Santa with a CCW: The Unexpected Encounter with Law Enforcement" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/santa-with-a-ccw-the-unexpected-encounter-with-law-enforcement" title="Santa with a CCW: The Unexpected Encounter with Law Enforcement">Santa with a CCW: The Unexpected Encounter with Law Enforcement</a></h3>
+          <p class="article-excerpt">When festive cheer collides with the law, the results can be surprisingly heartwarming, as illustrated by an Ohio couple dressed as Santa and Mrs. Claus dealing with a speeding ticket and a concealed carry permit. In th…</p>
+          <div class="article-hashtags">#ConcealedCarry #Ohio #SantaClaus #LawEnforcement #PublicSafety</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Editorial</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/26/multimedia/26collins-jztl/26collins-jztl-facebookJumbo.jpg" alt="Reflecting on 2025: A Year of Controversy and Reflection" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/reflecting-on-2025-a-year-of-controversy-and-reflection" title="Reflecting on 2025: A Year of Controversy and Reflection">Reflecting on 2025: A Year of Controversy and Reflection</a></h3>
+          <p class="article-excerpt">As 2025 comes to a close, I invite you to challenge your memory of the tumultuous events that defined a year dominated by Donald Trump, from legislative battles to electoral upheavals. Dive into this engaging quiz by Ga…</p>
+          <div class="article-hashtags">#PoliticalQuiz #2025Review #GailCollins #TrumpEra #CivicEngagement</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54014.jpg" alt="Stalled Inflation: An In-Depth Review and What It Means for Us" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/stalled-inflation-an-in-depth-review-and-what-it-means-for-us" title="Stalled Inflation: An In-Depth Review and What It Means for Us">Stalled Inflation: An In-Depth Review and What It Means for Us</a></h3>
+          <p class="article-excerpt">Inflation seems to be slowing down, but what does this really signify for everyday citizens? In this piece, I delve into the underlying factors contributing to this trend and critique its potential implications on our e…</p>
+          <div class="article-hashtags">#Inflation #Economy #ConsumerRights #CivicAccountability #SocialJustice</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54278.jpg" alt="Reclaiming History: Perspectives on Our Past and Future" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/reclaiming-history-perspectives-on-our-past-and-future" title="Reclaiming History: Perspectives on Our Past and Future">Reclaiming History: Perspectives on Our Past and Future</a></h3>
+          <p class="article-excerpt">In a charged editorial, I dive into what it means to claim a historic identity—an urgent conversation on self-perception in the modern narrative. This piece challenges us to reconsider how we view our own legacies and t…</p>
+          <div class="article-hashtags">#IdentityPolitics #HistoricalFigures #Activism #NarrativeReclamation #CulturalDiscourse</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54274.jpg" alt="Trump&#039;s 2025 Performance Raises Alarms: A Wake-Up Call for Voters" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/trumps-2025-performance-raises-alarms-a-wake-up-call-for-voters" title="Trump&#039;s 2025 Performance Raises Alarms: A Wake-Up Call for Voters">Trump&#039;s 2025 Performance Raises Alarms: A Wake-Up Call for Voters</a></h3>
+          <p class="article-excerpt">As Trump&#039;s performance in 2025 falters, it&#039;s a stark reminder of the stakes involved in our democracy. I&#039;m here to dissect the implications of his leadership for American voters and push for accountability. This isn&#039;t j…</p>
+          <div class="article-hashtags">#Accountability #Trump2025 #Democracy #CivicEngagement #JusticeReform</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-53775.jpg" alt="Decoding the Editorial Cartoon: Humor Meets Commentary" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/decoding-the-editorial-cartoon-humor-meets-commentary" title="Decoding the Editorial Cartoon: Humor Meets Commentary">Decoding the Editorial Cartoon: Humor Meets Commentary</a></h3>
+          <p class="article-excerpt">This editorial cartoon offers a sharp perspective on contemporary issues while fostering discussion among viewers. Let&#039;s dive deeper into its implications and the conversation it sparks.</p>
+          <div class="article-hashtags">#EditorialCartoons #SocialCommentary #ArtAndPolitics #HumorInDiscourse #Satire</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Sports</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2025/12/GettyImages-2252430167.jpg?w=1600&amp;quality=80&amp;webp=1" alt="James Madison&#039;s QB Alonza Barnett III Enters Transfer Portal: What This Means for College Football" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/james-madisons-qb-alonza-barnett-iii-enters-transfer-portal-what-this-means-for-college-football" title="James Madison&#039;s QB Alonza Barnett III Enters Transfer Portal: What This Means for College Football">James Madison&#039;s QB Alonza Barnett III Enters Transfer Portal: What This Means for College Football</a></h3>
+          <p class="article-excerpt">Amidst a flurry of transfer decisions leading into the historic transfer portal opening, James Madison&#039;s star quarterback, Alonza Barnett III, announces his departure. What does this mean for his future and the competit…</p>
+          <div class="article-hashtags">#CollegeFootball #TransferPortal #SportsNews #JamesMadison #PlayerMovement</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54054.jpg" alt="Portnoy&#039;s Heartfelt Gesture: Barstool Sports Designs for a Fallen Hero" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/portnoys-heartfelt-gesture-barstool-sports-designs-for-a-fallen-hero" title="Portnoy&#039;s Heartfelt Gesture: Barstool Sports Designs for a Fallen Hero">Portnoy&#039;s Heartfelt Gesture: Barstool Sports Designs for a Fallen Hero</a></h3>
+          <p class="article-excerpt">Dave Portnoy and Barstool Sports are stepping up in a big way, selling shirts to benefit the family of a slain Delaware trooper. This initiative showcases the powerful intersection of sports and community support, remin…</p>
+          <div class="article-hashtags">#BarstoolSports #TrooperCummings #CommunitySupport #SportsPhilanthropy #HeartInTheGame</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/travis-kelce-christmas-day.jpg" alt="Travis Kelce&#039;s Emotional Farewell: A Possible End to a Legendary Career" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/travis-kelces-emotional-farewell-a-possible-end-to-a-legendary-career" title="Travis Kelce&#039;s Emotional Farewell: A Possible End to a Legendary Career">Travis Kelce&#039;s Emotional Farewell: A Possible End to a Legendary Career</a></h3>
+          <p class="article-excerpt">As Chiefs fans packed Arrowhead Stadium, a bittersweet mood hung in the air as Travis Kelce potentially played his last home game, reflecting on a career filled with triumphs, camaraderie, and unforgettable moments.</p>
+          <div class="article-hashtags">#TravisKelce #KansasCityChiefs #NFL #SportsJournalism #Football</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/9ebb/live/05203f50-e217-11f0-b67b-690eb873de1b.jpg" alt="Australia&#039;s Lightning Start Topples England in Ashes Test" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/australias-lightning-start-topples-england-in-ashes-test" title="Australia&#039;s Lightning Start Topples England in Ashes Test">Australia&#039;s Lightning Start Topples England in Ashes Test</a></h3>
+          <p class="article-excerpt">In a stunning display of cricketing prowess, Australia dismantles England&#039;s top order, reducing them to a staggering 8-3 within five overs. Day one of the fourth Ashes Test in Melbourne sets the stage for an intense sho…</p>
+          <div class="article-hashtags">#Ashes #Cricket #AustraliaVsEngland #SportsNews #CricketHighlights</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/55a0/live/51a2e9e0-e0e1-11f0-94d6-33dfd766fcaa.jpg" alt="Amorim Holds the Line: No Departures Without Replacements at United" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/amorim-holds-the-line-no-departures-without-replacements-at-united" title="Amorim Holds the Line: No Departures Without Replacements at United">Amorim Holds the Line: No Departures Without Replacements at United</a></h3>
+          <p class="article-excerpt">In a bold assertion, Manchester United&#039;s head coach Ruben Amorim states that no player will depart the club this January without a proper replacement lined up. As the transfer window approaches, the stakes couldn&#039;t be h…</p>
+          <div class="article-hashtags">#ManchesterUnited #RubenAmorim #TransferWindow #FootballStrategy #YouthDevelopment</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Entertainment</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/riley-green-cma-fest-2025.jpg" alt="Riley Green: The Reality of Fame vs. Farming Life" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/riley-green-the-reality-of-fame-vs-farming-life" title="Riley Green: The Reality of Fame vs. Farming Life">Riley Green: The Reality of Fame vs. Farming Life</a></h3>
+          <p class="article-excerpt">In a candid conversation, country star Riley Green reveals that his fame is merely a facade compared to the grounded reality of his Alabama farm life. Join me as I delve into his reflections on success and humility.</p>
+          <div class="article-hashtags">#CountryMusic #RileyGreen #LifeOnTheFarm #CMAAwards #MusicIndustry</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54112.jpg" alt="Heartbroken Tributes Pour In for Social Media&#039;s Beloved Dog Influencer" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/heartbroken-tributes-pour-in-for-social-medias-beloved-dog-influencer" title="Heartbroken Tributes Pour In for Social Media&#039;s Beloved Dog Influencer">Heartbroken Tributes Pour In for Social Media&#039;s Beloved Dog Influencer</a></h3>
+          <p class="article-excerpt">The recent passing of a cherished dog influencer has left a gaping hole in the hearts of fans worldwide. Amidst shock, we reflect on the joy and connection this furry star brought to our lives. Join me as we explore how…</p>
+          <div class="article-hashtags">#DogInfluencer #PetCommunity #Grief #SocialMediaCulture #InfluencerImpact</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets2.cbsnewsstatic.com/hub/i/r/2025/12/25/e63c1e3f-13fd-4d39-86df-e78b0e85c4fe/thumbnail/1200x630/b66622211c0fb05a64c9f7633cdf3876/gettyimages-2249788344.jpg" alt="Jimmy Kimmel&#039;s Christmas Roast: A Satire on American Tyranny" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/jimmy-kimmels-christmas-roast-a-satire-on-american-tyranny" title="Jimmy Kimmel&#039;s Christmas Roast: A Satire on American Tyranny">Jimmy Kimmel&#039;s Christmas Roast: A Satire on American Tyranny</a></h3>
+          <p class="article-excerpt">On Christmas Day, Jimmy Kimmel delivered a scathing critique of President Trump&#039;s regime in his Alternative Christmas Message. With humor and sharp insight, he warned U.K. viewers that &quot;tyranny is booming&quot; in the U.S.,…</p>
+          <div class="article-hashtags">#JimmyKimmel #USPolitics #Satire #FreeSpeech #CulturalCommentary</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54399.jpg" alt="All Aboard: My Thrilling 27-Hour Amtrak Journey from D.C. to New Orleans" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/all-aboard-my-thrilling-27-hour-amtrak-journey-from-dc-to-new-orleans" title="All Aboard: My Thrilling 27-Hour Amtrak Journey from D.C. to New Orleans">All Aboard: My Thrilling 27-Hour Amtrak Journey from D.C. to New Orleans</a></h3>
+          <p class="article-excerpt">Ever wondered what it&#039;s like to take a 27-hour train ride from D.C. to New Orleans? Join me as I recount my colorful Amtrak adventure, filled with quirky encounters and breathtaking views along the way.</p>
+          <div class="article-hashtags">#TrainTravel #AmtrakAdventures #TravelTales #CulturalJourney #SlowTravel</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/22/multimedia/avatar-anatomy3-hlbm/avatar-anatomy3-hlbm-facebookJumbo.jpg" alt="Delving Deep into Darkness: The Intriguing Alliances of &#039;Avatar: Fire and Ash&#039;" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/delving-deep-into-darkness-the-intriguing-alliances-of-avatar-fire-and-ash" title="Delving Deep into Darkness: The Intriguing Alliances of &#039;Avatar: Fire and Ash&#039;">Delving Deep into Darkness: The Intriguing Alliances of &#039;Avatar: Fire and Ash&#039;</a></h3>
+          <p class="article-excerpt">In &#039;Avatar: Fire and Ash&#039;, James Cameron explores a treacherous partnership between Oona Chaplin&#039;s Varang and Stephen Lang&#039;s Quaritch. What secrets lie beneath their deadly alliance? Dive in for a captivating journey th…</p>
+          <div class="article-hashtags">#Avatar #JamesCameron #FilmAnalysis #CulturalCritique #Entertainment</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Business</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/5840/live/35baaca0-df41-11f0-a5e8-050d4171e402.jpg.webp" alt="Maximizing Joy: Smart Ways to Handle Unwanted Christmas Gifts" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/maximizing-joy-smart-ways-to-handle-unwanted-christmas-gifts" title="Maximizing Joy: Smart Ways to Handle Unwanted Christmas Gifts">Maximizing Joy: Smart Ways to Handle Unwanted Christmas Gifts</a></h3>
+          <p class="article-excerpt">As holiday celebrations fade, many of us are left with gifts that miss the mark. Discover how to repurpose, repack, or simply pass along those unwanted items without feeling guilty. Dive into practical and sustainable o…</p>
+          <div class="article-hashtags">#Christmas #Regifting #Sustainability #CostOfLiving #GiftGiving #Charity</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://media.wired.com/photos/69276115d4b9291b4e51e024/191:100/w_1280,c_limit/politics_wte_sheriff_border_patrol2.jpg" alt="The Looming Shadow of Mass Deportations Under Trump" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-looming-shadow-of-mass-deportations-under-trump" title="The Looming Shadow of Mass Deportations Under Trump">The Looming Shadow of Mass Deportations Under Trump</a></h3>
+          <p class="article-excerpt">The far-right zealots anticipated playing a pivotal role in Trump&#039;s mass deportation agenda, but the administration has instead militarized federal and local law enforcement. As we delve deeper, I explore the implicatio…</p>
+          <div class="article-hashtags">#MassDeportations #ImmigrationPolicy #CivilRights #TrumpAdministration #LawEnforcement</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-53909.jpg" alt="From Big Law to Faith: Navigating Life&#039;s Unpredictable Career Paths" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/from-big-law-to-faith-navigating-lifes-unpredictable-career-paths" title="From Big Law to Faith: Navigating Life&#039;s Unpredictable Career Paths">From Big Law to Faith: Navigating Life&#039;s Unpredictable Career Paths</a></h3>
+          <p class="article-excerpt">In a world where career shifts can redefine our purpose, one individual&#039;s journey from a high-stakes law career to becoming a rabbi—and then exploring yet another path—offers profound insights into the true meaning of f…</p>
+          <div class="article-hashtags">#CareerChange #Fulfillment #Rabbi #BigLaw #ProfessionalGrowth</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54138.jpg" alt="Inside the Critical Role Empire: How Two Men Aim to Build a Lasting Legacy" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/inside-the-critical-role-empire-how-two-men-aim-to-build-a-lasting-legacy" title="Inside the Critical Role Empire: How Two Men Aim to Build a Lasting Legacy">Inside the Critical Role Empire: How Two Men Aim to Build a Lasting Legacy</a></h3>
+          <p class="article-excerpt">Join me as we explore the ambitious vision behind Critical Role, where two dynamic creators are not only reshaping the nerd community but also aiming to forge a legacy brand that resonates across generations.</p>
+          <div class="article-hashtags">#CriticalRole #GamingCulture #LegacyBrand #Entertainment #TabletopGaming</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54422.jpg" alt="The Success Secrets of Family Businesses: A Global Perspective" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-success-secrets-of-family-businesses-a-global-perspective" title="The Success Secrets of Family Businesses: A Global Perspective">The Success Secrets of Family Businesses: A Global Perspective</a></h3>
+          <p class="article-excerpt">Family businesses are the backbone of many economies, yet their success often goes unnoticed. I explore why these enterprises thrive, combining tradition with innovation, and their critical impact on communities and glo…</p>
+          <div class="article-hashtags">#FamilyBusiness #Sustainability #EconomicImpact #BusinessStrategy #GlobalEconomy</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+        
+        <footer>
+            <p>Articles are sourced from <a href="https://newsclip.com/">Newsclip</a> and grouped by category for easier browsing.</p>
+            <p style="margin-top: 10px;">Visit <a href="https://newsclip.com/general/">General</a>, <a href="https://newsclip.com/business/">Business</a>, <a href="https://newsclip.com/sports/">Sports</a>, <a href="https://newsclip.com/entertainment/">Entertainment</a>, and <a href="https://newsclip.com/editorial/">Editorial</a> sections.</p>
+        </footer>
+    </div>
+</body>
+</html>
