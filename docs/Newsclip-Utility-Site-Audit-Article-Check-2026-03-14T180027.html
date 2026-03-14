@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsclip Utility: Site Audit Article Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+        }
+        
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-row {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .article-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .article-hashtags {
+            color: #667eea;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+        
+        <header>
+            <h1>Newsclip Utility: Site Audit Article Check</h1>
+            <p>Latest Articles Grouped by Category</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated: March 14, 2026 at 06:00 PM</p>
+        </header>
+        
+        <section class="category-section">
+  <h2 class="category-header">General</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106642.jpg" alt="Tragic Ties: The Michigan Synagogue Attacker&#039;s Family Impacted by Airstrike in Lebanon" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/tragic-ties-the-michigan-synagogue-attackers-family-impacted-by-airstrike-in-lebanon" title="Tragic Ties: The Michigan Synagogue Attacker&#039;s Family Impacted by Airstrike in Lebanon">Tragic Ties: The Michigan Synagogue Attacker&#039;s Family Impacted by Airstrike in Lebanon</a></h3>
+          <p class="article-excerpt">In a grim turn of events, the family of the Michigan synagogue attacker has been identified among casualties of a recent airstrike in Lebanon. This connection raises profound questions about the intertwined narratives o…</p>
+          <div class="article-hashtags">#MichiganSynagogue #LebanonAirstrike #Hezbollah #Terrorism #ViolenceAgainstInnocents</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106648.jpg" alt="Tremors of Defiance: The Tehran Explosion and Its Echoes" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/tremors-of-defiance-the-tehran-explosion-and-its-echoes" title="Tremors of Defiance: The Tehran Explosion and Its Echoes">Tremors of Defiance: The Tehran Explosion and Its Echoes</a></h3>
+          <p class="article-excerpt">A powerful explosion disrupts a state-organized rally in Tehran, underscoring the volatility of Iranian politics amid heightened tensions with Israel. Thousands took to the streets, raising questions about government co…</p>
+          <div class="article-hashtags">#TehranExplosion #IranPolitics #AlQudsDay #CivicRights #MiddleEastTensions</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2026/03/Copy-of-Two-split-pic-43.jpg?w=1200crop=1" alt="Tova Noel&#039;s Crucial Testimony: What We Need to Know About Epstein&#039;s Guards" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/tova-noels-crucial-testimony-what-we-need-to-know-about-epsteins-guards" title="Tova Noel&#039;s Crucial Testimony: What We Need to Know About Epstein&#039;s Guards">Tova Noel&#039;s Crucial Testimony: What We Need to Know About Epstein&#039;s Guards</a></h3>
+          <p class="article-excerpt">As the House Oversight Committee presses for answers regarding Jeffrey Epstein&#039;s controversial death, former prison guard Tova Noel is caught in the spotlight. Her upcoming testimony could shed light on the disturbing e…</p>
+          <div class="article-hashtags">#JeffreyEpstein #TovaNoel #GovernmentAccountability #JusticeReform #InvestigativeJournalism</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2026/03/GettyImages-1337712765.jpg?w=1200crop=1" alt="Writing Poorly: A Student&#039;s Defense Against AI Detection" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/writing-poorly-a-students-defense-against-ai-detection" title="Writing Poorly: A Student&#039;s Defense Against AI Detection">Writing Poorly: A Student&#039;s Defense Against AI Detection</a></h3>
+          <p class="article-excerpt">In a startling defense, students are intentionally writing poorly to evade AI detection tools. This trend reveals deeper flaws in the system and raises urgent questions about academic integrity.</p>
+          <div class="article-hashtags">#AcademicIntegrity #ArtificialIntelligence #Education #StudentLife #Ethics</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106636.jpg" alt="Tensions Rise: U.S. Strikes Iran&#039;s Oil Hub Amid Fallout" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/tensions-rise-us-strikes-irans-oil-hub-amid-fallout" title="Tensions Rise: U.S. Strikes Iran&#039;s Oil Hub Amid Fallout">Tensions Rise: U.S. Strikes Iran&#039;s Oil Hub Amid Fallout</a></h3>
+          <p class="article-excerpt">In a dramatic escalation of military operations, the U.S. has targeted Iran&#039;s oil export infrastructure, igniting fierce warnings of retaliation from Tehran. In this piece, I delve into the implications of these actions…</p>
+          <div class="article-hashtags">#IranWar #USMilitary #MiddleEast #GlobalOilMarket #PoliticalTensions</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Editorial</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106756.jpg" alt="The Lies We Live: A Critical Reflection" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-lies-we-live-a-critical-reflection" title="The Lies We Live: A Critical Reflection">The Lies We Live: A Critical Reflection</a></h3>
+          <p class="article-excerpt">In an age where truth feels increasingly elusive, I confront how we&#039;ve been misled by those in power. It&#039;s time to unravel the narratives that bind us and demand accountability. Join me as I explore the hidden stories t…</p>
+          <div class="article-hashtags">#Accountability #Truth #InvestigativeJournalism #CivicEngagement #MediaLiteracy</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/32b13ef2a9f3cae08291acb544b434ec458bc1c4/0_13_8566_6851/master/8566.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&amp;enable=upscale&amp;s=fd7662a817e3470ce8b1ba869010d8f3" alt="Unpacking Ella Baron&#039;s Satirical Lens on War: Trump, Netanyahu, and Their Victims" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unpacking-ella-barons-satirical-lens-on-war-trump-netanyahu-and-their-victims" title="Unpacking Ella Baron&#039;s Satirical Lens on War: Trump, Netanyahu, and Their Victims">Unpacking Ella Baron&#039;s Satirical Lens on War: Trump, Netanyahu, and Their Victims</a></h3>
+          <p class="article-excerpt">In her latest cartoon, Ella Baron critiques the roles of Trump and Netanyahu amid the devastating war in the Middle East. This piece not only highlights the absurdity of power but also sheds light on the often-overlooke…</p>
+          <div class="article-hashtags">#MiddleEast #PoliticalSatire #EllaBaron #WarVictims #Accountability</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/f9e418f0d59527fcc3a4c8ddab9f3e3d00690d7a/472_0_6827_5464/master/6827.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&amp;enable=upscale&amp;s=ba7a899cace03ac59a6e04e7d4973696" alt="From Hummus to Aggression: A Culinary Conflict in North London" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/from-hummus-to-aggression-a-culinary-conflict-in-north-london" title="From Hummus to Aggression: A Culinary Conflict in North London">From Hummus to Aggression: A Culinary Conflict in North London</a></h3>
+          <p class="article-excerpt">In the heart of north London, food becomes a poignant form of protest amidst the Israel-Gaza conflict. As local cafes face both culinary competition and ideological warfare, the act of serving traditional Palestinian di…</p>
+          <div class="article-hashtags">#LondonEateries #PalestinianCuisine #CulturalIdentity #Gentrification #FoodActivism</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-107106.jpg" alt="Tallahassee in the Aftermath: A Call for Reflection" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/tallahassee-in-the-aftermath-a-call-for-reflection" title="Tallahassee in the Aftermath: A Call for Reflection">Tallahassee in the Aftermath: A Call for Reflection</a></h3>
+          <p class="article-excerpt">In the wake of recent tumultuous events in Tallahassee, it&#039;s time for us to scrutinize not just the chaos but the underlying currents that led us here. Join me as we unpack the implications of this wreckage and the urge…</p>
+          <div class="article-hashtags">#Tallahassee #CommunityVoices #PoliticalAccountability #CivicEngagement #FutureOfDemocracy</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-107110.jpg" alt="Revisiting the Power of Editorial Cartoons on Pi Day" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/revisiting-the-power-of-editorial-cartoons-on-pi-day" title="Revisiting the Power of Editorial Cartoons on Pi Day">Revisiting the Power of Editorial Cartoons on Pi Day</a></h3>
+          <p class="article-excerpt">On this Pi Day, we celebrate the subtle yet sharp power of editorial cartoons as they challenge perspectives and provoke thought. Let&#039;s explore how humor intersects with critique in today&#039;s complex landscape.</p>
+          <div class="article-hashtags">#EditorialCartoons #PiDay #Satire #SocialCommentary #ArtAndPolitics</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Sports</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/4b38/live/2435e450-1f37-11f1-801d-ed3cff6bf876.jpg" alt="Aberg Soars at Players Championship, McIlroy and Scheffler Scramble to Cut" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/aberg-soars-at-players-championship-mcilroy-and-scheffler-scramble-to-cut" title="Aberg Soars at Players Championship, McIlroy and Scheffler Scramble to Cut">Aberg Soars at Players Championship, McIlroy and Scheffler Scramble to Cut</a></h3>
+          <p class="article-excerpt">In an electrifying second round, Ludvig Aberg&#039;s stunning 63 leads the Players Championship, while Rory McIlroy and Scottie Scheffler grit their teeth to make the cut. The drama unfolds at TPC Sawgrass as the competition…</p>
+          <div class="article-hashtags">#PlayersChampionship #Golf #LudvigAberg #McIlroy #Scheffler #SportsNews</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/44c8/live/6492b5f0-1f05-11f1-87bd-bb650a6d53bc.jpg" alt="Scotland&#039;s Moment: A Historic Tilt at Glory in Dublin" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/scotlands-moment-a-historic-tilt-at-glory-in-dublin" title="Scotland&#039;s Moment: A Historic Tilt at Glory in Dublin">Scotland&#039;s Moment: A Historic Tilt at Glory in Dublin</a></h3>
+          <p class="article-excerpt">After years on the sidelines as Ireland and Wales reveled in Six Nations success, Scotland finally has its day in the sun. This Saturday, Dublin will witness a historic showdown as they pursue a long-awaited championshi…</p>
+          <div class="article-hashtags">#ScotlandRugby #SixNations #RugbyUnion #TripleCrown #ScottishPride</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2026/03/GettyImages-2265311730.jpg?w=1200crop=1" alt="Darryn Peterson Opens Up: A Journey Through Trauma and Redemption" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/darryn-peterson-opens-up-a-journey-through-trauma-and-redemption" title="Darryn Peterson Opens Up: A Journey Through Trauma and Redemption">Darryn Peterson Opens Up: A Journey Through Trauma and Redemption</a></h3>
+          <p class="article-excerpt">Darryn Peterson shares the harrowing details of a traumatic experience during his freshman season at Kansas, revealing the challenges that left him hospitalized and the resilience that fuels his comeback.</p>
+          <div class="article-hashtags">#DarrynPeterson #KansasJayhawks #NCAABasketball #TraumaInSports #SportsResilience</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-107156.jpg" alt="Bam Adebayo&#039;s Scorching 83-Point Game: Should It Carry an Asterisk?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/bam-adebayos-scorching-83-point-game-should-it-carry-an-asterisk" title="Bam Adebayo&#039;s Scorching 83-Point Game: Should It Carry an Asterisk?">Bam Adebayo&#039;s Scorching 83-Point Game: Should It Carry an Asterisk?</a></h3>
+          <p class="article-excerpt">Bam Adebayo&#039;s recent 83-point game raised eyebrows and sparked debate. As fans, we need to ask: does this phenomenal score come with caveats that we can&#039;t ignore? Let&#039;s dive into the details.</p>
+          <div class="article-hashtags">#BamAdebayo #NBARecords #SportsDebate #Basketball #SportsAnalysis</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://s.yimg.com/ny/api/res/1.2/a7ZnuPzuayDRVm.EQtiYAA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA7Y2Y9d2VicA--/https://media.zenfs.com/en/spartans_wire_usa_today_articles_977/4811bb09443ae4deff23ab4f4955d6a3" alt="UCLA Dominates Michigan State in Thrilling Big Ten Tournament Showdown" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/ucla-dominates-michigan-state-in-thrilling-big-ten-tournament-showdown" title="UCLA Dominates Michigan State in Thrilling Big Ten Tournament Showdown">UCLA Dominates Michigan State in Thrilling Big Ten Tournament Showdown</a></h3>
+          <p class="article-excerpt">UCLA&#039;s talented duo, Trent Perry and Donovan Dent, reflect on their exhilarating victory over Michigan State in the Big Ten Tournament. Their insights reveal the heart and strategy behind this crucial win.</p>
+          <div class="article-hashtags">#UCLA #BigTenTournament #MarchMadness #CollegeBasketball #UCLABruins</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Entertainment</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/0b2d/live/83afc210-1f29-11f1-801d-ed3cff6bf876.jpg" alt="Geeta Gandbhir: Double Oscar Nominee Defies Odds" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/geeta-gandbhir-double-oscar-nominee-defies-odds" title="Geeta Gandbhir: Double Oscar Nominee Defies Odds">Geeta Gandbhir: Double Oscar Nominee Defies Odds</a></h3>
+          <p class="article-excerpt">Meet Geeta Gandbhir, the trailblazing director nominated for two Oscars this year in separate categories. Her unique journey sheds light on the challenges and triumphs in today&#039;s documentary filmmaking landscape.</p>
+          <div class="article-hashtags">#Oscars2026 #Filmmaking #GeetaGandbhir #Documentary #WomenInFilm</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://www.rollingstone.com/wp-content/uploads/2026/03/dolly-parton-health-update.jpg?w=1600&amp;h=900&amp;crop=1" alt="Dolly Parton Triumphantly Returns: A Journey of Healing and Celebration" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/dolly-parton-triumphantly-returns-a-journey-of-healing-and-celebration" title="Dolly Parton Triumphantly Returns: A Journey of Healing and Celebration">Dolly Parton Triumphantly Returns: A Journey of Healing and Celebration</a></h3>
+          <p class="article-excerpt">After battling health concerns and the loss of her husband, Dolly Parton joyfully reassures fans, saying she&#039;s &#039;back to normal.&#039; Join me as we dive into her heartfelt journey at Dollywood, embracing resilience and creat…</p>
+          <div class="article-hashtags">#DollyParton #CountryMusic #HealthJourney #Resilience #Broadway</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets2.cbsnewsstatic.com/hub/i/r/2026/03/14/8b073dda-e1a2-43bc-9994-250884f8af29/thumbnail/1200x630/a2958fee653da357d01b7683f177ae05/1773493083904.png" alt="Jay Buchanan&#039;s Soulful Rendition of &quot;Sway&quot; Shines in Saturday Sessions" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/jay-buchanans-soulful-rendition-of-sway-shines-in-saturday-sessions" title="Jay Buchanan&#039;s Soulful Rendition of &quot;Sway&quot; Shines in Saturday Sessions">Jay Buchanan&#039;s Soulful Rendition of &quot;Sway&quot; Shines in Saturday Sessions</a></h3>
+          <p class="article-excerpt">Join me as we delve into Jay Buchanan&#039;s captivating performance of &quot;Sway&quot; during CBS&#039;s Saturday Sessions, where the Grammy-nominated frontman of Rival Sons reveals the magic of his solo artistry and the emotional depth…</p>
+          <div class="article-hashtags">#JayBuchanan #SaturdaySessions #WeaponsOfBeauty #LiveMusic #RockMusic</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets1.cbsnewsstatic.com/hub/i/r/2026/03/14/5a3eb030-9d5d-4367-912b-ad646a584f35/thumbnail/1200x630/f9fffcb8b6c405fc58fc7fb8b04579f8/cbsn-fusion-oscars-2026-predictions-thumbnail.jpg" alt="2026 Oscars: Predictions and Speculations" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/2026-oscars-predictions-and-speculations" title="2026 Oscars: Predictions and Speculations">2026 Oscars: Predictions and Speculations</a></h3>
+          <p class="article-excerpt">Join me as I unpack the buzz leading up to the 98th Academy Awards. From Kat Rosenfield&#039;s insights to potential dark horses, I&#039;ll dive into what to expect this Oscar season.</p>
+          <div class="article-hashtags">#Oscars2026 #FilmPredictions #AcademyAwards #CinemaCulture #KatRosenfield</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106884.jpg" alt="The End of an Era: NBCUniversal Pulls the Plug on &#039;Access Hollywood&#039;" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-end-of-an-era-nbcuniversal-pulls-the-plug-on-access-hollywood" title="The End of an Era: NBCUniversal Pulls the Plug on &#039;Access Hollywood&#039;">The End of an Era: NBCUniversal Pulls the Plug on &#039;Access Hollywood&#039;</a></h3>
+          <p class="article-excerpt">NBCUniversal&#039;s decision to cancel &#039;Access Hollywood&#039; marks the end of an era in entertainment journalism. As 1st-run syndication ends, I reflect on its legacy and what this means for celebrity culture and media consumpt…</p>
+          <div class="article-hashtags">#AccessHollywood #CelebrityCulture #EntertainmentNews #MediaTrends #PopCulture</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Business</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://media.wired.com/photos/69b4a38f35ad66c4a99cb61d/191:100/w_1280,c_limit/Samsung%20Galaxy%20S26%20Ultra%20SOURCE%20Julian%20Chokkattu.jpg" alt="Samsung Galaxy S26 Ultra: A Privacy - First Approach" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/samsung-galaxy-s26-ultra-a-privacy-first-approach" title="Samsung Galaxy S26 Ultra: A Privacy - First Approach">Samsung Galaxy S26 Ultra: A Privacy - First Approach</a></h3>
+          <p class="article-excerpt">Samsung&#039;s Galaxy S26 Ultra introduces a noteworthy privacy display that enhances in-public usability without compromising screen quality or brightness. Discover how this feature reshapes smartphone experience in my full…</p>
+          <div class="article-hashtags">#Samsung #TechReview #Smartphones #Privacy #Innovation</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106932.jpg" alt="Local Business Owner Faces Arrest Over Workers&#039; Comp Violations" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/local-business-owner-faces-arrest-over-workers-comp-violations" title="Local Business Owner Faces Arrest Over Workers&#039; Comp Violations">Local Business Owner Faces Arrest Over Workers&#039; Comp Violations</a></h3>
+          <p class="article-excerpt">In a striking case that underscores the importance of compliance, a business owner has been arrested for failing to provide mandatory Workers&#039; Compensation insurance. This incident highlights the intricate balance betwe…</p>
+          <div class="article-hashtags">#WorkersCompensation #BusinessNews #Compliance #EmployeeSafety #LocalBusiness</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://media.wired.com/photos/69b4529a7f3e3000e5be196d/191:100/w_1280,c_limit/Pi-Day-Science-2255375835.jpg" alt="How Dropping Needles Can Help You Calculate Pi" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/how-dropping-needles-can-help-you-calculate-pi" title="How Dropping Needles Can Help You Calculate Pi">How Dropping Needles Can Help You Calculate Pi</a></h3>
+          <p class="article-excerpt">On Pi Day, discover a playful yet profound method to approximate this famous number using nothing more than sewing needles. A journey from geometry to probability unfolds, revealing the intersection of math and creativi…</p>
+          <div class="article-hashtags">#MathInAction #PiDay #Probability #STEM #MontyCarlo #GeometricFun</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/171b/live/f55b1c10-1f11-11f1-9a3d-e74384ba5d85.jpg" alt="The Real Price of Fuel: A Retailer&#039;s Perspective on Surging Costs" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-real-price-of-fuel-a-retailers-perspective-on-surging-costs" title="The Real Price of Fuel: A Retailer&#039;s Perspective on Surging Costs">The Real Price of Fuel: A Retailer&#039;s Perspective on Surging Costs</a></h3>
+          <p class="article-excerpt">Goran Raven, an independent fuel retailer, faces backlash as oil prices soar. Despite his transparency efforts, rising costs result in hostility towards his staff. Join me in exploring the real-world impact of these fue…</p>
+          <div class="article-hashtags">#FuelPrices #SmallBusinesses #ConsumerAwareness #EconomicImpact #Retail</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106922.jpg" alt="Navigating Las Vegas: A Tech Traveler&#039;s Essential Guide" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/navigating-las-vegas-a-tech-travelers-essential-guide" title="Navigating Las Vegas: A Tech Traveler&#039;s Essential Guide">Navigating Las Vegas: A Tech Traveler&#039;s Essential Guide</a></h3>
+          <p class="article-excerpt">Las Vegas is more than just a playground; it&#039;s a tech haven waiting to be explored. Discover where to stay, dine, and recharge during your next visit, as we dive deep into the city&#039;s tech-driven offerings.</p>
+          <div class="article-hashtags">#TechTravel #LasVegas #TravelTech #SmartHotels #BusinessTravel</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+        
+        <footer>
+            <p>Articles are sourced from <a href="https://newsclip.com/">Newsclip</a> and grouped by category for easier browsing.</p>
+            <p style="margin-top: 10px;">Visit <a href="https://newsclip.com/general/">General</a>, <a href="https://newsclip.com/business/">Business</a>, <a href="https://newsclip.com/sports/">Sports</a>, <a href="https://newsclip.com/entertainment/">Entertainment</a>, and <a href="https://newsclip.com/editorial/">Editorial</a> sections.</p>
+        </footer>
+    </div>
+</body>
+</html>
